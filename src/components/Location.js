@@ -6,15 +6,14 @@ const Location = () => {
 
 	const changeLocation = (val) => {
 		dispatch({
-			type: "CHG_LOCATION",
+			type: "CHG_CURRENCY",
 			payload: val,
 		});
 	};
 
 	return (
 		<div className='alert alert-secondary'>
-			{" "}
-			Location{" "}
+			Location
 			{
 				<select name='Location' id='Location' onChange={(event) => changeLocation(event.target.value)}>
 					<option value='£'>Uk(£)</option>
@@ -28,4 +27,3 @@ const Location = () => {
 };
 
 export default Location;
-
